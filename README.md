@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. Learn what an instance method is.
+1. Describe an instance method.
 2. Call instance methods on an object.
 3. Build instance methods for an object.
 
@@ -36,7 +36,7 @@ The `#object_id` method simply tells you the object's identifier in your compute
 
 > I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages. - Alan Kay
 
-In dot notation, we call the object the received the method message the "receiver" and we call the method the "message".
+In dot notation, we call the object that received the method message the "receiver" and we call the method the "message".
 
 ```ruby
 # The receiver is this very string      # reverse is the message
@@ -45,7 +45,7 @@ In dot notation, we call the object the received the method message the "receive
 
 ### Instance Methods
 
-All objects respond to methods and messages, like `#object_id` in the example above. We evoke the methods an object responds to via dot-notation. One of the great things you can ask every object in ruby is "What methods do you respond to?"
+All objects respond to methods and messages, like `#object_id` in the example above. One interesting method provided is the `#methods` method that returns an array of all the methods and messages an object responds to. We can evoke this method via dot-notation. One of the great things you can ask every object in ruby is "What methods do you respond to?"
 
 ```ruby
 class Dog
@@ -67,15 +67,13 @@ fido.methods
 
 As you can see, out of the box, our objects can do a lot of things. Where these things come from and what do they do are not so important right now because all of that functionality is very low level and not interesting to our Dogs.
 
-However, one interesting method provided is the `#methods` method that returns an array of all the methods and messages an object responds to.
-
 ### Building Your Own Instance Methods
 
 How do we add our own methods to our classes? In our Dog example, can we teach our Dog a new trick? Can we teach our Dog to bark for example?
 
 We can. We're used to defining methods already with the `def` keyword. If we place this method definition within the body of a class, that method becomes a specific behavior of instances of that class, not a generic procedure we can just call whenever we want.
 
-We call the methods that an object responds to, the methods defined within the object's class, **Instance Methods** because they are methods that belong to an instance.
+We call the methods defined within the object's class **Instance Methods** because they are methods that belong to any instance of the class.
 
 ```ruby
 class Dog
@@ -121,7 +119,7 @@ fido.bark #> "Woof!"
 fido.sit # NoMethodError: undefined method `sit' for #<Dog:0x007fa4e9a9e8a0>
 ```
 
-In the same manner, instance methods, the methods that belong to particular instances of particular classes, are not globally evocable like procedural methods, they cannot be called without an instance.
+In the same manner, instance methods, the methods that belong to particular instances of particular classes, are not globally evocable like procedural methods. They cannot be called without an instance.
 
 ```ruby
 class Dog
