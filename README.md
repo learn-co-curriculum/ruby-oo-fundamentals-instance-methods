@@ -27,10 +27,12 @@ We send objects messages asking them to perform an operation or task through a s
 class Dog
 end
 
+fido = Dog.new #=> #<Dog:0x007fc52c2cc588>
+
 fido.object_id #=> 70173135795280
 ```
 
-In the example above, we send the `fido` instance a message `object_id` by separating the receiving object, `fido` and the message, `object_id` by a dot (`.`). When we send an object a message through dot notation, we are evoking the corresponding method on the object. We are calling the `object_id` method on `fido`.
+In the example above, we send the `fido` instance a message `object_id` by separating the receiving object, `fido` and the message, `object_id` by a dot (`.`). When we send an object a message through dot notation, we are evoking the corresponding method on the object. We are calling the `object_id` method on `fido`. (Note: the `object_id` you get if you test out the above code will be different.)
 
 The `#object_id` method simply tells you the object's identifier in your computer's memory (the place that all things live in your computer).
 
