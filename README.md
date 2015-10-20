@@ -21,7 +21,7 @@ But what can this instance of a dog stored in the local variable `fido` do? In f
 
 ### Dot Notation
 
-We send objects messages asking them to perform an operation or task through a syntax known as "Dot Notation."
+We send objects messages asking them to perform an operation or task through a syntax known as "Dot Notation".
 
 ```ruby
 class Dog
