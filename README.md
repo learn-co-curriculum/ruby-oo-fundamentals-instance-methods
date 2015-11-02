@@ -67,7 +67,7 @@ fido.methods
 # :==, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
 ```
 
-As you can see, out of the box, our objects can do a lot of things. Where these things come from and what do they do are not so important right now because all of that functionality is very low level and not interesting to our Dogs.
+As you can see, out of the box, our objects can do a lot of things. Where these things come from and what they do are not so important right now because all of that functionality is very low level and not interesting to our Dogs.
 
 ### Building Your Own Instance Methods
 
