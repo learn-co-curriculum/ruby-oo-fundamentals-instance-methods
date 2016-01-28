@@ -140,4 +140,4 @@ bark # NameError: undefined local variable or method `bark' for main:Object
 
 The ability to define methods and behaviors in our classes for our instances makes Ruby classes behave not just as factories, capable of instantiating new individual instances, but also as a blueprint, defining what those instances can do.
 
-<a href='https://learn.co/lessons/instance-methods-readme-ruby' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/instance-methods-readme-ruby' title='Instance Methods Ruby'>Instance Methods Ruby</a> on Learn.co and start learning to code for free.</p>
