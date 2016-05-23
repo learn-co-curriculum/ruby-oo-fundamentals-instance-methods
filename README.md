@@ -47,7 +47,7 @@ In dot notation, we call the object that received the method message the "receiv
 
 ### Instance Methods
 
-All objects respond to methods and messages, like `#object_id` in the example above. One interesting method provided is the `#methods` method that returns an array of all the methods and messages an object responds to. We can evoke this method via dot-notation. One of the great things you can ask every object in ruby is "What methods do you respond to?"
+All objects respond to methods and messages, like `#object_id` in the example above. One interesting method provided is the `#methods` method that returns an array of all the methods and messages an object responds to. We can evoke this method via dot-notation. One of the great things you can ask every object in Ruby is "What methods do you respond to?"
 
 ```ruby
 class Dog
