@@ -34,7 +34,7 @@ fido.object_id #=> 70173135795280
 
 In the example above, we send the `fido` instance a message `object_id` by separating the receiving object, `fido` and the message, `object_id` by a dot (`.`). When we send an object a message through dot notation, we are evoking the corresponding method on the object. We are calling the `object_id` method on `fido`. (Note: the `object_id` you get if you test out the above code will be different.)
 
-The `#object_id` method simply tells you the object's identifier in your computer's memory (the place that all things live in your computer).
+The `#object_id` method simply tells you the object's identifier in your computer's memory (the place where all things live in your computer).
 
 > I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages. - Alan Kay
 
@@ -141,3 +141,5 @@ bark # NameError: undefined local variable or method `bark' for main:Object
 The ability to define methods and behaviors in our classes for our instances makes Ruby classes behave not just as factories, capable of instantiating new individual instances, but also as a blueprint, defining what those instances can do.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/instance-methods-readme-ruby' title='Instance Methods Ruby'>Instance Methods Ruby</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/instance-methods-readme-ruby'>Instance Methods</a> on Learn.co and start learning to code for free.</p>
