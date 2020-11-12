@@ -88,7 +88,7 @@ class Dog
 end
 
 fido = Dog.new
-fido.bark #> "Woof!"
+fido.bark #=> "Woof!"
 ```
 
 By defining `#bark` within the `Dog` class, `bark` becomes a method of all instances of Dogs. If we make more dogs, they can all bark.
@@ -101,10 +101,10 @@ class Dog
 end
 
 fido = Dog.new
-fido.bark #> "Woof!"
+fido.bark #=> "Woof!"
 
 snoopy = Dog.new
-snoopy.bark #> "Woof!"
+snoopy.bark #=> "Woof!"
 ```
 
 Objects can only do what we teach them to do via the code we write and the methods we define. For example, currently, Dogs do not know how to sit.
