@@ -118,7 +118,7 @@ end
 
 fido = Dog.new
 fido.bark #=> "Woof!"
-fido.sit #=> NoMethodError: undefined method `sit' for #<Dog:0x007fa4e9a9e8a0>
+fido.sit #=> NoMethodError: undefined method 'sit' for #<Dog:0x007fa4e9a9e8a0>
 ```
 
 In the same manner, instance methods, the methods that belong to particular instances of particular classes, are not globally evocable like procedural methods. They cannot be called without an instance.
@@ -133,7 +133,7 @@ end
 fido = Dog.new
 
 # Let's try just calling bark without fido
-bark #=> NameError: undefined local variable or method `bark' for main:Object
+bark #=> NameError: undefined local variable or method 'bark' for main:Object
 ```
 
 ### Classes as Blueprints
